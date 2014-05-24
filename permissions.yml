@@ -58,6 +58,29 @@ groups:
     prefix: '[Guest]'
     options:
       build: true
+  Donator:
+    default: false
+    permissions:
+    - WarpSigns.use.donator
+    - essentials.fly
+    - essentials.gamemode
+    inheritance:
+    - Member
+    prefix: '[Donator]'
+    options:
+      build: true
+  Subscriber:
+    default: false
+    permissions:
+    - WarpSigns.use.donator
+    - WarpSigns.use.sub
+    - essentials.fly
+    - essentials.gamemode
+    inheritance:
+    - Member
+    prefix: '[Donator]'
+    options:
+      build: true
   Moderator:
     default: false
     permissions:
