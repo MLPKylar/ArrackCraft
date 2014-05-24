@@ -1,5 +1,69 @@
 groups:
-  default:
+  Noob:
     default: true
     permissions:
     - modifyworld.*
+    - essentials.eco
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.pay
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.compass
+    - essentials.depth
+    - essentials.getpos
+    - essentials.help
+    - essentials.helpop
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.magic
+    - essentials.msg.format
+    - essentials.msg.url
+    - essentials.delhome
+    - essentials.home
+    - essentials.sethome
+    - essentials.tpa
+  Trial-Mod:
+    default: true
+    permissions:
+    - modifyworld.*
+
+  Moderator:
+    default: true
+    permissions:
+    - modifyworld.*
+
+  Head-Moderator:
+    default: true
+    permissions:
+    - modifyworld.*
+
+  Trial-Admin:
+    default: true
+    permissions:
+
+    - modifyworld.*
+  Admin:
+    default: true
+    permissions:
+    - modifyworld.*
+  Head-Admin:
+    default: true
+    permissions:
+    - '*'
+  Co-Owner:
+    default: true
+    permissions:
+    - '*'
+  Owner:
+    default: true
+    permissions:
+    - '*'
+    
