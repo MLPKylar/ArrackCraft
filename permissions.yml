@@ -1,69 +1,146 @@
 groups:
-  Noob:
+  Member:
     default: true
     permissions:
     - modifyworld.*
-    - essentials.eco
-    - essentials.balance
-    - essentials.balancetop
-    - essentials.pay
-    - essentials.afk
-    - essentials.afk.auto
-    - essentials.compass
-    - essentials.depth
-    - essentials.getpos
+    - essentials.rules
     - essentials.help
-    - essentials.helpop
-    - essentials.ignore
-    - essentials.itemdb
+    - essentials.pay
+    - essentials.balance
+    - essentials.tell
+    - essentials.sell
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.who
+    - essentials.afk
     - essentials.list
-    - essentials.mail
-    - essentials.mail.send
-    - essentials.me
-    - essentials.motd
     - essentials.msg
-    - essentials.msg.color
-    - essentials.msg.magic
-    - essentials.msg.format
-    - essentials.msg.url
-    - essentials.delhome
+    - essentials.warp.list
+    - essentials.warp
+    - essentials.helpop
+    - essentials.motd
+    - essentials.spawn
+    - essentials.home
+    - essentials.tpa
+    - essentials.tpahere
+    - essentials.tpaccept
     - essentials.home
     - essentials.sethome
-    - essentials.tpa
-  Trial-Mod:
-    default: true
-    permissions:
-    - modifyworld.*
-
+    - essentials.sethome
+    - iConomy.payment
+    - iConomy.holdings
+    - iConomy.holdings.others
+    - iConomy.sell
+    - factions.join
+    - factions.create
+    - factions.disband
+    - factions.leave
+    - factions.help
+    - factions.title
+    - factions.relation
+    - factions.who
+    - factions.power
+    - factions.claim
+    - factions.unclaim
+    - factions.description
+    - factions.list
+    - factions.home
+    - factions.sethome
+    - factions.unclaimall
+    - factions.kick
+    - factions.invite
+    - factions.map
+    - factions.show
+    - factions.disband
+    - factions.chat
+    - ChestShop.buy
+    - ChestShop.sell
+    prefix: '[Guest]'
+    options:
+      build: true
   Moderator:
-    default: true
+    default: false
     permissions:
-    - modifyworld.*
-
+    - essentials.tempban
+    - essentials.tp
+    - essentials.heal
+    - essentials.feed
+    - essentials.clearinventory
+    - essentials.eco.loan
+    - essentials.ext
+    - essentials.getpos
+    - essentials.helpop.recieve
+    - essentials.home.others
+    - essentials.invsee
+    - essentials.jails
+    - essentials.jump
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.mute
+    - essentials.realname
+    - essentials.signs.create.*
+    - essentials.signs.break.*
+    - essentials.time
+    - essentials.protect.alerts
+    - essentials.protect.admin
+    - essentials.protect.ownerinfo
+    - essentials.togglejail
+    - essentials.top
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.whois
+    - essentials.world
+    - factions.mod
+    - WarpSigns.create
+    - WarpSigns.use.*
+    inheritance:
+    - Member
+    prefix: '[Moderator]'
+    options:
+      build: true
   Head-Moderator:
-    default: true
+    default: false
     permissions:
     - modifyworld.*
-
-  Trial-Admin:
-    default: true
-    permissions:
-
-    - modifyworld.*
+    - essentials.ban.notify
+    - essentials.banip
+    inheritance:
+    - Moderator
+    - Member
+    prefix: '[Head-Mod]'
+    options:
+      build: true
   Admin:
-    default: true
+    default: false
     permissions:
-    - modifyworld.*
+    - ChestShop.admin
+    - factions.admin
+    - worldedit.*
+    - essentials.gamemode
+    - essentials.tp
+    - essentials.ban
+    - essentials.god
+    - essentials.invsee
+    inheritance:
+    - Member
+    - Moderator
+    - Head-Moderator
+    prefix: '[Admin] '
+    options:
+      build: true
   Head-Admin:
-    default: true
+    default: false
     permissions:
     - '*'
+    prefix: '[Head-Admin]'
+    options:
+      build: true
   Co-Owner:
-    default: true
+    default: false
     permissions:
     - '*'
   Owner:
-    default: true
+    default: false
     permissions:
     - '*'
     
